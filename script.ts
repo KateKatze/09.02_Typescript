@@ -1,4 +1,19 @@
-// // Ex. 2
+// Ex. 1
+
+var array: number[] = [];
+for (let i=1; i<=10; i++){
+    array.push(i);
+}
+for (let j: number = 0; j < array.length; j++) {
+    for (let i: number = 0; i < array.length; i++) {
+        var result: number = array[i]*array[j];
+        var text: string = `${array[i]}x${array[j]} = ${result}`
+        console.log(text);
+    }
+}
+
+
+// Ex. 2
 
 // const person = {fname: "Kate", lname: "Kogler"};
 // console.log(person.fname, person.lname);
@@ -40,23 +55,26 @@
 //     console.log(index, ppl[index]);
 // }
 
-const text = (document.getElementById("result") as HTMLElement);
 
-const salami: String [] = ["Cheese", "Salami", "Olives", "Onion", "Oregano"];
+// Advanced
 
-text.innerHTML = "Salami Pizza: <br>";
+// const text = (document.getElementById("result") as HTMLElement);
 
-for (let index in salami) {
-    text.innerHTML += `${Number (index) + 1} - ${salami[index]} <br>`;
-}
+// const salami: String [] = ["Cheese", "Salami", "Olives", "Onion", "Oregano"];
 
-const text1 = (document.getElementById("next") as HTMLElement);
+// text.innerHTML = "Salami Pizza: <br>";
 
-const mafioso: String [] = ["Corn", "Ham", "Pepperoni", "Onion", "Salami"];
+// for (let index in salami) {
+//     text.innerHTML += `${Number (index) + 1} - ${salami[index]} <br>`;
+// }
 
-text1.innerHTML = "Mafioso Pizza: <br>";
+// const text1 = (document.getElementById("next") as HTMLElement);
 
-for (let index in mafioso) {
-    text1.innerHTML += `${Number (index) + 1} - ${mafioso[index]} <br>`;
-}
+// const mafioso: String [] = ["Corn", "Ham", "Pepperoni", "Onion", "Salami"];
+
+// text1.innerHTML = "Mafioso Pizza: <br>";
+
+// for (let index in mafioso) {
+//     text1.innerHTML += `${Number (index) + 1} - ${mafioso[index]} <br>`;
+// }
 
